@@ -1,0 +1,265 @@
+/* ===========================
+   Tiny Foot PK
+   Premium Theme
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f3ed;
+    color:#3e2b23;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#4a2f24;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo img{
+    height:60px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d8b68a;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(74,47,36,.80),rgba(74,47,36,.80)),
+    url(images/banner.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-text{
+    max-width:650px;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.2;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#c79b65;
+    color:#fff;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#8b5e3c;
+    transform:translateY(-3px);
+}
+
+/* Products */
+
+.products{
+    padding:100px 8%;
+}
+
+.products h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.product{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    position:relative;
+}
+
+.product:hover{
+    transform:translateY(-10px);
+}
+
+.product img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.product h3{
+    padding:20px 20px 5px;
+    font-size:22px;
+}
+
+.size{
+    padding:0 20px;
+    color:#777;
+}
+
+.price{
+    padding:10px 20px;
+    font-size:24px;
+    color:#8b5e3c;
+    font-weight:bold;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#c79b65;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.whatsapp{
+    display:block;
+    margin:20px;
+    padding:14px;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    background:#128C7E;
+}
+
+/* About */
+
+.about{
+    padding:100px 8%;
+    background:#efe4d7;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Contact */
+
+.contact{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#4a2f24;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:8px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.products h2,
+.about h2,
+.contact h2{
+    font-size:32px;
+}
+
+.product img{
+    height:240px;
+}
+
+}
